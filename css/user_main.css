@@ -1,0 +1,111 @@
+
+
+#button
+{
+	border: solid 1px #F97148;
+	cursor: pointer;
+	width: 150px;
+	background-color: #F97148;
+	height: 45px;
+	color: white;
+	font-size: 19px;
+	border-radius: 10px;
+	font-family: "Lucida Console", Monaco, monospace;
+	transition: 0.5s;
+}
+#button:hover
+{
+	cursor: pointer;
+	width: 150px;
+	background-color: white;
+	height: 45px;
+	color: #F97148;
+	font-family: "Lucida Console", Monaco, monospace;
+	box-shadow: 0px 0px 8px 4px #F97148;
+	font-size: 19px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+#go_back_button
+{
+	text-decoration: none;
+	border: solid;
+	border-color: #DED2B6;
+	color: #EA4D88;
+	background-color: #DED2B6;
+	width: 100px;
+	text-align: left;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+	display: inline-block;
+}
+#go_back_button span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+#go_back_button span:before {
+  content: '\21d0';
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+#go_back_button:hover span {
+  padding-left: 25px;
+}
+#go_back_button:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+#form-selector-red
+{
+	color: #E67A73;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*#go_forward_button
+{
+	text-decoration: none;
+	border: solid;
+	border-color: #DED2B6;
+	color: #EA4D88;
+	background-color: #DED2B6;
+	width: 100px;
+	text-align: right;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+	display: inline-block;
+}
+#go_forward_button span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+#go_forward_button span:before {
+  content: '\21d0';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#go_forward_button:hover span {
+  padding-right: 25px;
+}
+#go_forward_button:hover span:before {
+  opacity: 1;
+  right: 0;
+}*/
+
+red
+{
+	color: #DE5245;
+}
+green
+{
+	color: green;
+}

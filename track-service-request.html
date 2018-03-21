@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Track service request</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/user_main.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	<script src="javascript/main.js"></script>
+</head>
+<body id="main">
+	<header>
+		<div id="sideMenu" class="sideMenu">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="mini-statement.html">Mini / Detailed Statement</a>
+			<a href="request-for-checkbook.html">Request for Checkbook</a>
+			<a class="currentMenu" href="track-service-request.html">Track service request</a>
+			<a href="fund-transfer-own.html">Fund Transfer</a>
+			<a href="settings-address.html">Settings</a>
+		</div>
+		<nav>
+			<span onclick="openMenu()">&nbsp;&#9776;&nbsp; Menu</span>
+			<a class="logout" href="adminlogout.html">Log Out!</a>
+		</nav>
+	</header>
+	<section>
+		<article>
+			<div class="card">
+				<p class="main-text">Track service request</p>
+
+				<!-- Please Delete the below script after connecting this to the backend-->
+				<script type="text/javascript">
+					window.onload = function(){
+	                	document.getElementById('form').onsubmit = function(){
+                			var x = document.getElementById("displaycontents");
+							x.style.display="block";
+		                    return false 
+		                }
+		            }
+				</script>
+				<!-- Please Delete the above script after connecting this to the backend-->
+
+				<div class="card">
+					<form onsubmit="displaycontents()" id="form">
+						<!--Please remove the onsubmit function after connecting to the database-->
+						<input type="text" name="service-id" placeholder="Service ID" required="true">
+						<br><br>
+						<input type="submit" value="Search">
+					</form>
+				</div>
+				<br><br>
+				<div class="card" id="displaycontents" style="display: none;"><!--Please remove this style after connecting to the database -->
+					<p class="main-text">Service ID</p>
+					<p class="sub-text">1</p>
+					<br>
+					<p class="main-text">Service Description</p>
+					<p class="sub-text">Checkbook request</p>
+					<br>
+					<p class="main-text">Service Raised Date</p>
+					<p class="sub-text">21-03-2018</p>
+					<br>
+					<p class="main-text">Service Status </p>
+					<p class="sub-text">active</p>
+				</div>
+			</div>
+			<br><br>
+			<div class="card">
+				<div class="table-card">
+					<table>
+						<tr class="table-head"> 
+							<th>ID</th>
+							<th>Description</th>
+							<th>Date</th>
+							<th>Status</th>
+						</tr>
+						<tr class="table-description">
+							<td><p>1</p></td>
+							<td><p>Checkbook request</p></td>
+							<td><p>21-03-2018</p></td>
+							<td><p>active</p></td>
+						</tr>
+						<tr class="table-description">
+							<td><p>2</p></td>
+							<td><p>ATM card</p></td>
+							<td><p>22-03-2018</p></td>
+							<td><p>active</p></td>
+						</tr>
+						<tr class="table-description">
+							<td><p>3</p></td>
+							<td><p>Checkbook request</p></td>
+							<td><p>23-03-2018</p></td>
+							<td><p>hold</p></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
