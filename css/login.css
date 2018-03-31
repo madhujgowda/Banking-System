@@ -10,6 +10,11 @@ section article form p
 	font-size: 25px;
 	color: #E3D934;
 }
+section article form a
+{
+	color: #E3D934;
+	font-size: 20px;
+}
 #login_container
 {
 	background-color: #000;
@@ -31,7 +36,7 @@ section article form p
 	background-color: #DED2B6;
 	border-radius: 20px;
 }
-#loginbutton
+#button
 {
 	cursor: pointer;
 	width: 100px;
